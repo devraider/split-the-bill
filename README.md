@@ -37,11 +37,11 @@ The application is structured with a focus on modularity and reusability. Compon
 
 ![IMG1](assets/readme/1.png)
 
-### 2. Add firend to share expenses
+### 2. Add friend to share expenses
 
 ![IMG1](assets/readme/2.png)
 
-### 3. Add firend to share expenses
+### 3. Add friend to share expenses
 
 ![IMG1](assets/readme/3.png)
 
@@ -54,8 +54,8 @@ The application is structured with a focus on modularity and reusability. Compon
 ### 1. Clone the application
 
 ```bash
-git clone https://github.com/username/react-pizza-app.git
-cd react-pizza-app
+git clone https://github.com/devraider/split-the-bill.git
+cd split-the-bill
 ```
 
 ### 2. Install Dependencies
