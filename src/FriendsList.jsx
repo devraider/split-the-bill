@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AddFriend from "./AddFriend";
 import Friend from "./Friend";
 
 function FriendsList({ friends }) {
@@ -12,10 +11,6 @@ function FriendsList({ friends }) {
           <Friend friend={friend} />
         ))}
       </ul>
-      <button onClick={() => setToggleAddFriend((e) => !e)}>
-        {toggleAddFriend ? "Close" : "Add friend"}
-      </button>
-      {toggleAddFriend && <AddFriend />}
     </div>
   );
 }
