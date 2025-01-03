@@ -1,8 +1,8 @@
 function Logo() {
   return (
-    <div>
+    <header>
       <h1>Split the bill</h1>
-    </div>
+    </header>
   );
 }
 
