@@ -31,6 +31,24 @@ The application is structured with a focus on modularity and reusability. Compon
 - **Conditional Rendering** - Dynamic display of content based on user interactions and application state.
 - **Reusable Components** - Creation of generic components that can be utilized across different parts of the application, promoting code reuse and consistency.
 
+## Demo / Walkthrough
+
+### 1. Overview
+
+![IMG1](assets/readme/1.png)
+
+### 2. Add firend to share expenses
+
+![IMG1](assets/readme/2.png)
+
+### 3. Add firend to share expenses
+
+![IMG1](assets/readme/3.png)
+
+### 4. Share a new expense with your new friend
+
+![IMG1](assets/readme/4.png)
+
 ## How to Get and Run the Application 🛠️
 
 ### 1. Clone the application
