@@ -3,6 +3,7 @@ import AddFriend from "./AddFriend";
 import Button from "./Button";
 import FormSplitBill from "./FormSplitBill";
 import FriendsList from "./FriendsList";
+import Logo from "./Logo";
 
 const initFriends = [
   {
@@ -39,8 +40,21 @@ function App() {
     setSelectedFriend((curr) => (curr?.id === friend.id ? null : friend));
     setShowAddFrined(false);
   }
+
+  function handleSplitBill(value) {
+    setFriends((friends) =>
+      friends.map((friend) =>
+        friend.id === selectedFriend?.id
+          ? { ...friend, balance: friend.balance + value }
+          : friend
+      )
+    );
+    setSelectedFriend(null);
+  }
+
   return (
     <div className="app">
+      <Logo />
       <div className="sidebar">
         <FriendsList
           friends={friends}
@@ -53,7 +67,11 @@ function App() {
         </Button>
       </div>
       {selectedFriend && (
-        <FormSplitBill key={selectedFriend.id} friend={selectedFriend} />
+        <FormSplitBill
+          key={selectedFriend.id}
+          friend={selectedFriend}
+          onSplitBill={handleSplitBill}
+        />
       )}
     </div>
   );
