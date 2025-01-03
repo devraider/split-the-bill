@@ -1,19 +1,21 @@
 import { useState } from "react";
 import Button from "./Button";
 
-function AddFriend() {
+function AddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
   function handleSubmit(e) {
-    e.prventDefault();
+    e.preventDefault();
     const id = crypto.randomUUID();
     const newFriend = {
       id,
       name,
-      image: `${image}?u=${id}`,
+      image,
       balance: 0,
     };
+
+    onAddFriend(newFriend);
   }
   return (
     <form className="form-add-friend" onSubmit={handleSubmit}>
