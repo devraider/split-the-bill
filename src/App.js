@@ -1,4 +1,5 @@
 import AddFriend from "./AddFriend";
+import Button from "./Button";
 import Footer from "./Footer";
 import FriendsList from "./FriendsList";
 
@@ -29,6 +30,7 @@ function App() {
       <div className="sidebar">
         <FriendsList friends={friends} />
         <AddFriend />
+        <Button>Add friend</Button>
       </div>
     </div>
   );

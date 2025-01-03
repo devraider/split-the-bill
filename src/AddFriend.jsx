@@ -1,10 +1,11 @@
 function AddFriend() {
   return (
     <form className="form-add-friend">
-      <label>Friend name:</label>
-      <input type="text" placeholder="Friend..." />
+      <label>Friend</label>
+      <input type="text" />
+
       <label>Avatar</label>
-      <input type="text" placeholder="Avatar..." />
+      <input type="text" />
     </form>
   );
 }
