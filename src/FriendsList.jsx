@@ -1,9 +1,6 @@
-import { useState } from "react";
 import Friend from "./Friend";
 
 function FriendsList({ friends }) {
-  const [toggleAddFriend, setToggleAddFriend] = useState(false);
-
   return (
     <div className="sidebar">
       <ul>
