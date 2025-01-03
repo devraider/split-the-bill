@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <em>💸 Split bill your friends 🫰 !</em>
+      <em>💸 Split bill your friends 💸</em>
     </footer>
   );
 }
