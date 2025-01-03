@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Split the Bill Application 💰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Motivation
 
-## Available Scripts
+The "Split the Bill" project is a ReactJS-based application designed to simplify the process of dividing expenses among friends or group members.
 
-In the project directory, you can run:
+In this project, I deepened my understanding of several key React concepts, including:
 
-### `npm start`
+- **Data Flow**: Mastering the flow of data through the application, and determining when to use global vs. local state based on the nature of the data.
+- **Props Children**: Passing nested elements into components to enable dynamic content rendering.
+- **Derived State**: Creating states that are derived from other existing states, ensuring efficient data handling.
+- **Lifting State Up**: Moving state to a higher component to enable sharing of data between multiple child components.
+- **Forms and Controlled Components**: Managing form inputs through controlled components, ensuring form data is consistently synced with state.
+- **Props Destructuring**: Using destructuring to cleanly extract props in a more concise and readable manner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It serves as a practical implementation to reinforce the knowledge gained from various React learning resources.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features ✨
 
-### `npm test`
+1. **ReactJS** - Utilizes React version 18.3 for building user interfaces.
+2. **CSS Modules** - CSS Modules for component-scoped styling, ensuring modular and maintainable CSS.
+3. **JavaScript (ES6)** - JavaScript features such as array methods, template literals, and destructuring for cleaner and more efficient code.
+4. **Expense Management** - Allows users to add expenses, facilitating effective tracking of shared costs.
+5. **Debt Calculation** - Automatically calculates the amount each person owes or is owed, simplifying the settlement of shared expenses.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Component Structure 🛠️
 
-### `npm run build`
+The application is structured with a focus on modularity and reusability. Components are organized to manage different aspects of the application, such as expense input, group listings, and debt summaries. This approach facilitates:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **State Management** - Efficient handling of application state to reflect real-time data updates.
+- **Conditional Rendering** - Dynamic display of content based on user interactions and application state.
+- **Reusable Components** - Creation of generic components that can be utilized across different parts of the application, promoting code reuse and consistency.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Get and Run the Application 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the application
 
-### `npm run eject`
+```bash
+git clone https://github.com/username/react-pizza-app.git
+cd react-pizza-app
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Run application in developemnt mode
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+### 4. Build for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [**Facebook React Team**](https://github.com/facebook/react) for great documentation: [Learn React from Docs](https://react.dev/learn)
+- 🧑‍🏫 [**Jonas Schmedtmann**](https://github.com/jonasschmedtmann)
+- 🎓 [The Ultimate React Course 2024: React, Next.js, Redux & More](https://www.udemy.com/course/the-ultimate-react-course/)
