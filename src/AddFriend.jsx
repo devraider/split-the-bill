@@ -10,7 +10,7 @@ function AddFriend() {
       <input type="text" value={name} onChange={setName} />
 
       <label>🖼️ Image</label>
-      <input type="text" value={image} onChange={image} />
+      <input type="text" value={image} onChange={setImage} />
 
       <Button>Add</Button>
     </form>
