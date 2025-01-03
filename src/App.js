@@ -4,6 +4,7 @@ import Button from "./Button";
 import FormSplitBill from "./FormSplitBill";
 import FriendsList from "./FriendsList";
 import Logo from "./Logo";
+import Footer from "./Footer";
 
 const initFriends = [
   {
@@ -53,27 +54,30 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <>
       <Logo />
-      <div className="sidebar">
-        <FriendsList
-          friends={friends}
-          onSelection={handleFriendSelection}
-          selectedFriend={selectedFriend}
-        />
-        {showAddFrined && <AddFriend onAddFriend={handleAddFriend} />}
-        <Button onClick={(e) => setShowAddFrined((show) => !show)}>
-          {showAddFrined ? "Close" : "Add friend"}
-        </Button>
+      <div className="app">
+        <div className="sidebar">
+          <FriendsList
+            friends={friends}
+            onSelection={handleFriendSelection}
+            selectedFriend={selectedFriend}
+          />
+          {showAddFrined && <AddFriend onAddFriend={handleAddFriend} />}
+          <Button onClick={(e) => setShowAddFrined((show) => !show)}>
+            {showAddFrined ? "Close" : "Add friend"}
+          </Button>
+        </div>
+        {selectedFriend && (
+          <FormSplitBill
+            key={selectedFriend.id}
+            friend={selectedFriend}
+            onSplitBill={handleSplitBill}
+          />
+        )}
       </div>
-      {selectedFriend && (
-        <FormSplitBill
-          key={selectedFriend.id}
-          friend={selectedFriend}
-          onSplitBill={handleSplitBill}
-        />
-      )}
-    </div>
+      <Footer />
+    </>
   );
 }
 
